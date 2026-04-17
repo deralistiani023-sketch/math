@@ -1,0 +1,7 @@
+{
+  "name": "MathVenture: Numerasi Kelas 6",
+  "description": "Sebuah aplikasi game edukasi matematika interaktif untuk siswa kelas 6 SD yang mencakup materi pola bilangan, pecahan, geometri, rasio, dan peluang dengan integrasi AI untuk pembuatan konten otomatis.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-game: "Fredoka", sans-serif;
+}
+
+:root {
+  --bg-vibrant: #FF6B6B;
+  --accent-vibrant: #4ECDC4;
+  --secondary-vibrant: #FFE66D;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #f8fafc;
+  min-height: 100vh;
+  color: #2F2E41;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes moveClouds {
+  0% { transform: translateX(-200px); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-clouds {
+  animation: moveClouds 30s linear infinite;
+}
+
+@keyframes blink {
+  0%, 90%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.1); }
+}
+
+.animate-blink {
+  animation: blink 3s infinite;
+}
+
+@keyframes twitch {
+  0%, 90%, 100% { transform: rotate(0deg); }
+  92% { transform: rotate(10deg); }
+  94% { transform: rotate(-10deg); }
+  96% { transform: rotate(5deg); }
+}
+
+.animate-twitch {
+  animation: twitch 2s infinite;
+}
